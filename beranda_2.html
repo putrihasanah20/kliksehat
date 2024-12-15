@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Layanan Kesehatan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kumar One', cursive;
+            background-color: #5A6E50;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-card {
+            background-color: #5A6E50;
+            border: 1px solid #5A6E50;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: 150px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        @media (max-width: 600px) {
+            .service-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Layanan Kesehatan yang kami tawarkan</h1>
+    <div class="services">
+        <div class="service-card">Konsultasi Online</div>
+        <div class="service-card">Home Care</div>
+        <div class="service-card">Perawatan Gigi & Mulut</div>
+        <div class="service-card">Program Diet</div>
+        <div class="service-card">Layanan Mental Health</div>
+        <div class="service-card">Donor Darah</div>
+    </div>
+</body>
+</html>
