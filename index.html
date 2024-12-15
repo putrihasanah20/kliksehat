@@ -1,0 +1,429 @@
+<html>
+    
+ <head>
+  <title>
+   Klik Sehat
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet"/>
+  <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+   body {
+            margin: 0;
+            font-family: 'Kumar One', cursive;
+            background-color: #cde0d0;
+            
+        }
+        .navbar {
+            background-color: #5a6e50;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #cde0d0;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #b0b8a1;
+            margin: 0 5px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #9aa88a;
+        }
+        .navbar .phone-icon {
+            color: #cde0d0;
+            font-size: 24px;
+        }
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content h1 {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+        .content h2 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        .content img {
+            width: 200px;
+            height: 200px;
+            background-color: #2ca25f;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+        .text-and-image {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .stats .stat {
+            background-color: #5a6e50;
+            color: #cde0d0;
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .stats {
+                flex-direction: column;
+                align-items: center;
+            }
+            .text-and-image {
+                flex-direction: column;
+            }
+        }
+ 
+    #id2 {
+        margin: 0;
+        padding: 0;
+        font-family: 'Kumar One', cursive;
+        background-color: #5A6E50;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
+    }
+    #id2 h1 {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 50px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    #id2 .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    #id2 .service-card {
+        background-color: #5A6E50;
+        border: 1px solid #5A6E50;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 200px;
+        height: 150px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+     @media (max-width: 600px) {
+        .service-card {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    #id3 {
+        background-color: #cde0d0;
+            font-family: 'Kumar One', cursive;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+
+    #id3 h1 {
+            margin-top: 20px;
+            font-size: 48px;
+            color: #000;
+        }
+       #id3 .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #id3 .card {
+            background-color: #cde0d0;
+            width: 200px;
+            height: 150px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+        }
+        #id3 .card p {
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            #id3 .card {
+                width: 150px;
+                height: 100px;
+                margin: 10px;
+            }
+            #id3 .card p {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+        }
+
+        #id4 {
+            margin: 0;
+            font-family: 'Kumar One', cursive;
+            background-color: #5A6E4F;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        #id4 .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        #id4 .form-section {
+            text-align: center;
+            margin-left: 100px;
+        }
+        #id4 .form-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        #id4 .form-section button {
+            display: block;
+            width: 300px;
+            padding: 20px;
+            margin: 10px auto;
+            background-color: #C5D8C6;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            color: #000000;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+        #id4 .form-section button:hover {
+            background-color: #B0C4B1;
+        }
+        #id4 .info-section {
+            text-align: center;
+        }
+        #id4 .info-section img {
+            width: 150px;
+            height: auto;
+        }
+        #id4 .info-section h2 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        #id4 .footer {
+            background-color: #C5D8C6;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #id4 .footer div {
+            display: flex;
+            align-items: center;
+        }
+        #id4 .footer i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        #id4 .footer span {
+            font-size: 16px;
+            color: #000000;
+        }
+        @media (max-width: 768px) {
+            #id4 .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            #id4 .form-section, .info-section {
+                width: 100%;
+                margin-left: 0;
+            }
+            #id4.form-section button {
+                width: 80%;
+            }
+        }
+</style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div>
+    <a href="#id2">
+     Tentang Kami
+    </a>
+    <a href="#id3">
+     Tenaga Kesehatan
+    </a>
+    <a href="#id4">
+     Wilayah
+    </a>
+    <a href="feedback_F1.html">
+     Feed Back
+    </a>
+   </div>
+   <div>
+    <i class="fas fa-phone phone-icon">
+    </i>
+   </div>
+  </div>
+  <div id="1" style="margin-bottom: 300px;">
+  <div class="content">
+   <div class="text-and-image">
+    <div>
+     <h2>
+      Selamat Datang Di
+     </h2>
+     <h1>
+      KLIK SEHAT!
+     </h1>
+    </div>
+    <img alt="Gambar kesehatan dengan latar belakang hijau dan simbol kesehatan" height="200" src="https://storage.googleapis.com/a1aa/image/6u9tb5HvZEphKxdeVfztZsd1CUeFzZeTudYQBDYeHPMlCaWfE.jpg" width="200"/>
+   </div>
+   <div class="stats">
+    <div class="stat">
+     +75 Pengguna
+    </div>
+    <div class="stat">
+     Rating 4,5
+    </div>
+    <div class="stat">
+     <a href="feedback_F1.html" style="color: wheat;">FeedBack</a>
+    </div>
+   </div>
+  </div>
+</div>
+  <div id="id2">
+    <title>Layanan Kesehatan</title>
+    <h1>Layanan Kesehatan yang kami tawarkan</h1>
+    <div class="services">
+        <div class="service-card"><a href="konsultasi_online_A1.html" style="color: wheat;">Konsultasi Online</a></div>
+        <div class="service-card"><a href="homecare_B1.html" style="color: wheat;">Home Care</a></div>
+        <div class="service-card"><a href="perawatan_gigi_mulut_C1.html" style="color: wheat;">Perawatan Gigi & Mulut</a></div>
+        <div class="service-card"><a href="program_diet_D3.html" style="color: wheat;">Program Diet</a></div>
+        <div class="service-card"><a href="konsultasi_diet_D2.html" style="color: wheat;">Konsultasi Program Diet</a></div>
+        <div class="service-card"><a href="konsultasi_mental_health_E2.html" style="color: wheat;">Layanan Mental Health</a></div>
+        <div class="service-card"><a href="kuesioner_E3.html" style="color: wheat;">Donor Darah</a></div>
+    </div>
+  </div>
+  <div id="id3">
+    <h1>Tenaga Kesehatan</h1>
+    <div class="container">
+        <div class="card">
+            <p>Ns. Muhammad Ilham</p>
+        </div>
+        <div class="card">
+            <p>Ns. Muhammad Ilham</p>
+        </div>
+        <div class="card">
+            <p>Ns. Muhammad Ilham</p>
+        </div>
+        <div class="card">
+            <p>Ns. Muhammad Ilham</p>
+        </div>
+        <div class="card">
+            <p>Ns. Muhammad Ilham</p>
+        </div>
+        <div class="card">
+            <p>Ns. Muhammad Ilham</p>
+        </div>
+        <div class="card">
+            <p>Ns. Muhammad Ilham</p>
+        </div>
+        <div class="card">
+            <p>Ns. Muhammad Ilham</p>
+        </div>
+    </div>
+  </div>
+  <div id="id4">
+    <div class="container">
+        <div class="form-section">
+         <h1>
+          DAFTAR
+         </h1>
+         <button>
+          NAMA
+         </button>
+         <button>
+          NOMOR WHATTSAP
+         </button>
+         <button>
+          EMAIL
+         </button>
+        </div>
+        <div class="info-section">
+         <img alt="Colorful map pin icon" height="150" src="https://storage.googleapis.com/a1aa/image/3NCZ8Ls2DXIKFdlVBaBgXKKxeNxf4qWNQsCd6owGrcC6wz6TA.jpg" width="150"/>
+         <h2>
+          Banda Aceh &amp;
+          <br/>
+          Aceh Besar
+         </h2>
+        </div>
+       </div>
+       <div class="footer">
+        <div>
+         <i class="fas fa-envelope">
+         </i>
+         <span>
+          Email
+         </span>
+        </div>
+        <div>
+         <i class="fab fa-instagram">
+         </i>
+         <span>
+          Instagram
+         </span>
+        </div>
+        <div>
+         <i class="fab fa-tiktok">
+         </i>
+         <span>
+          Tiktok
+         </span>
+        </div>
+        <div>
+         <i class="fab fa-twitter">
+         </i>
+         <span>
+          Twitter
+         </span>
+        </div>
+       </div>
+  </div>
+ </body>
+</html>
